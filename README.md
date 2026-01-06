@@ -5,18 +5,15 @@
 ## 📈 Stats publiques GitHub
 
 <p align="left">
-  <img
-    height="165"
-    src="https://github-readme-stats-sigma-five.vercel.app/api?username=roussov&show_icons=true&count_private=true&include_all_commits=true"
+  <img height="165"
+    src="https://github-readme-stats-sigma-five.vercel.app/api?username=roussov&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent&cache_seconds=21600"
     alt="stats"
   />
-  <img
-    height="165"
-    src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=roussov&layout=compact&langs_count=8"
+  <img height="165"
+    src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=roussov&layout=compact&langs_count=8&hide_border=true&theme=transparent&cache_seconds=21600"
     alt="top langs"
   />
 </p>
-
 <!-- Language badges -->
 ![Vitte](https://img.shields.io/badge/Vitte-language-6E56CF?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEwIDEyaDEwbDEyIDMwIDEyLTMwaDEwTDM2IDUySDI4eiIvPjwvc3ZnPg%3D%3D&logoColor=white)
 ![Muffin](https://img.shields.io/badge/Muffin-buildfile-FFB703?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwIDIyYzAtNyA2LTEyIDEyLTEyczEyIDUgMTIgMTJjMCA0LTIgNy01IDlsLTEgMnYxN0gyNlYzM2wtMS0yYy0zLTItNS01LTUtOXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIgMzZoMjBsLTIgMThIMjR6Ii8%2BPC9zdmc%2B&logoColor=white)
