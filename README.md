@@ -20,21 +20,14 @@
 
 
 ![Profile views](https://komarev.com/ghpvc/?username=vitte-lang&style=for-the-badge)
+![Org total](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Forg_totals.json)
+![Repo total](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Frepo_totals.json)
 
-![CI](https://img.shields.io/github/actions/workflow/status/vitte-lang/vitte/ci.yml?branch=main&style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/vitte-lang/vitte?style=for-the-badge)
-![Forks](https://img.shields.io/github/forks/vitte-lang/vitte?style=for-the-badge)
-![Issues](https://img.shields.io/github/issues/vitte-lang/vitte?style=for-the-badge)
-![PRs](https://img.shields.io/github/issues-pr/vitte-lang/vitte?style=for-the-badge)
-![Contributors](https://img.shields.io/github/contributors/vitte-lang/vitte?style=for-the-badge)
-![Commit activity](https://img.shields.io/github/commit-activity/m/vitte-lang/vitte?style=for-the-badge)
-![Last commit](https://img.shields.io/github/last-commit/vitte-lang/vitte/main?style=for-the-badge)
-![Org totals](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Forg_totals.json)
 
 <!-- Repo language mix (generated endpoints) -->
-![Languages](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte%2Fmain%2Fbadges%2Flanguages_summary.json)
-![Vitte %](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte%2Fmain%2Fbadges%2Flang_vitte.json)
-![Muffin %](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte%2Fmain%2Fbadges%2Flang_muffin.json)
+![Languages](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Flanguages_summary.json)
+![Vitte %](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Flang_vitte.json)
+![Muffin %](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Flang_muffin.json)
 
 
 <!-- Language badges -->
