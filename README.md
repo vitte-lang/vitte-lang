@@ -1,5 +1,17 @@
 # Vitte — vitte-lang (WIP)
 
+![Profile views](https://komarev.com/ghpvc/?username=<github_username>&label=Profile%20views)
+<!-- Repo stats (auto via Shields) -->
+![Top language](https://img.shields.io/github/languages/top/vitte-lang/vitte?style=for-the-badge) 
+![Languages](https://img.shields.io/github/languages/count/vitte-lang/vitte?style=for-the-badge)
+![Code size](https://img.shields.io/github/languages/code-size/vitte-lang/vitte?style=for-the-badge)
+![Repo size](https://img.shields.io/github/repo-size/vitte-lang/vitte?style=for-the-badge)
+![Last commit](https://img.shields.io/github/last-commit/vitte-lang/vitte?style=for-the-badge)
+<!-- Language badges -->
+![Vitte](https://img.shields.io/badge/Vitte-language-6E56CF?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEwIDEyaDEwbDEyIDMwIDEyLTMwaDEwTDM2IDUySDI4eiIvPjwvc3ZnPg%3D%3D&logoColor=white)
+![Muffin](https://img.shields.io/badge/Muffin-buildfile-FFB703?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwIDIyYzAtNyA2LTEyIDEyLTEyczEyIDUgMTIgMTJjMCA0LTIgNy01IDlsLTEgMnYxN0gyNlYzM2wtMS0yYy0zLTItNS01LTUtOXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIgMzZoMjBsLTIgMThIMjR6Ii8%2BPC9zdmc%2B&logoColor=white)
+
+
 Vitte est un langage de programmation en cours de construction, conçu comme un projet **toolchain-first** : l’objectif n’est pas seulement la syntaxe, mais un ensemble cohérent comprenant compilateur, bibliothèque standard, packaging, tests, et une trajectoire vers le **self-hosting**.
 
 Le projet est en phase active de structuration. Les interfaces et la grammaire peuvent évoluer rapidement.
