@@ -7,19 +7,19 @@
 <p align="left">
   <img
     height="165"
-    src="https://github-readme-stats-sigma-five.vercel.app/api?username=roussov&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent&cache_seconds=21600"
+    src="https://github-readme-stats-sigma-five.vercel.app/api?username=vitte-lang&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent&cache_seconds=21600"
     alt="stats"
   />
   <img
     height="165"
-    src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=roussov&layout=compact&langs_count=8&hide_border=true&theme=transparent&cache_seconds=21600"
+    src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=vitte-lang&layout=compact&langs_count=8&hide_border=true&theme=transparent&cache_seconds=21600"
     alt="top langs"
   />
 </p>
 
 
 
-![Profile views](https://komarev.com/ghpvc/?username=roussov&style=for-the-badge)
+![Profile views](https://komarev.com/ghpvc/?username=vitte-lang&style=for-the-badge)
 
 ![CI](https://img.shields.io/github/actions/workflow/status/vitte-lang/vitte/ci.yml?branch=main&style=for-the-badge)
 ![Stars](https://img.shields.io/github/stars/vitte-lang/vitte?style=for-the-badge)
@@ -29,6 +29,7 @@
 ![Contributors](https://img.shields.io/github/contributors/vitte-lang/vitte?style=for-the-badge)
 ![Commit activity](https://img.shields.io/github/commit-activity/m/vitte-lang/vitte?style=for-the-badge)
 ![Last commit](https://img.shields.io/github/last-commit/vitte-lang/vitte/main?style=for-the-badge)
+![Org totals](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Forg_totals.json)
 
 <!-- Repo language mix (generated endpoints) -->
 ![Languages](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte%2Fmain%2Fbadges%2Flanguages_summary.json)
