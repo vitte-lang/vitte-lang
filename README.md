@@ -1,8 +1,21 @@
 # Vitte — vitte-lang (WIP)
 
 
-![Profile views](https://komarev.com/ghpvc/?username=vitte-lang&style=for-the-badge)
+<!-- Badges rapides -->
+## 📈 Stats publiques GitHub
 
+<p align="left">
+  <img
+    height="165"
+    src="https://github-readme-stats-sigma-five.vercel.app/api?username=roussov&show_icons=true&count_private=true&include_all_commits=true"
+    alt="stats"
+  />
+  <img
+    height="165"
+    src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=roussov&layout=compact&langs_count=8"
+    alt="top langs"
+  />
+</p>
 
 <!-- Language badges -->
 ![Vitte](https://img.shields.io/badge/Vitte-language-6E56CF?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEwIDEyaDEwbDEyIDMwIDEyLTMwaDEwTDM2IDUySDI4eiIvPjwvc3ZnPg%3D%3D&logoColor=white)
