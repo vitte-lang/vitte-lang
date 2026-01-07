@@ -27,13 +27,7 @@ def parse_projects(path: Path):
 def badge_line(project):
     label = project["name"]
     repo = project["repo"]
-    color = project.get("color", "2DA44E")
-    return (
-        f"[![{label}]"
-        f"(https://img.shields.io/badge?label={label}"
-        f"&message=public&color={color}&style=for-the-badge)]"
-        f"(https://github.com/{repo})"
-    )
+    return f"- [{label}](https://github.com/{repo})"
 
 
 def render_block(projects):
