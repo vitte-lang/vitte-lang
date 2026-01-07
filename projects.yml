@@ -17,3 +17,6 @@
 - linguist
   repo: vitte-lang/linguist
   color: 2DA44E
+- muffin
+  repo: vitte-lang/muffin
+  color: 2DA44E
