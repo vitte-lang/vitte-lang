@@ -22,12 +22,13 @@ def fetch_repo(owner, repo, token):
 
 def main():
     if len(sys.argv) < 4:
-        print("usage: update_repo_totals.py <owner> <repo> <output_path>")
+        print("usage: update_repo_totals.py <owner> <repo> <output_path> [label]")
         return 2
 
     owner = sys.argv[1]
     repo = sys.argv[2]
     out_path = sys.argv[3]
+    label = sys.argv[4] if len(sys.argv) > 4 else "repo total"
     token = os.environ.get("GITHUB_TOKEN", "")
 
     data = fetch_repo(owner, repo, token)
@@ -39,7 +40,7 @@ def main():
 
     payload = {
         "schemaVersion": 1,
-        "label": "repo total",
+        "label": label,
         "message": message,
         "color": "blue",
     }

@@ -22,6 +22,10 @@
 ![Profile views](https://komarev.com/ghpvc/?username=vitte-lang&style=for-the-badge)
 ![Org total](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Forg_totals.json)
 ![Repo total](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Frepo_totals.json)
+![Vitte repo](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Fvitte_repo_totals.json)
+
+<!-- Org language mix (generated endpoints) -->
+![Org languages](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Forg_languages_summary.json)
 
 
 <!-- Repo language mix (generated endpoints) -->
@@ -34,17 +38,26 @@
 ![Vitte](https://img.shields.io/badge/Vitte-language-6E56CF?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEwIDEyaDEwbDEyIDMwIDEyLTMwaDEwTDM2IDUySDI4eiIvPjwvc3ZnPg%3D%3D&logoColor=white)
 ![Muffin](https://img.shields.io/badge/Muffin-buildfile-FFB703?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwIDIyYzAtNyA2LTEyIDEyLTEyczEyIDUgMTIgMTJjMCA0LTIgNy01IDlsLTEgMnYxN0gyNlYzM2wtMS0yYy0zLTItNS01LTUtOXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIgMzZoMjBsLTIgMThIMjR6Ii8%2BPC9zdmc%2B&logoColor=white)
 
+## Vitte — un langage complet pour construire vite et proprement
 
-Vitte est un langage de programmation **en construction**.
+Vitte est un nouveau langage de programmation en construction, pensé pour livrer
+des outils et des petits programmes sans bricolage.
+Il combine un compilateur, une IR/bytecode et un outil de build (Muffin) pour
+garder un flux simple, fiable et reproductible.
 
-### En 10 secondes
-- Tu écris du code en Vitte.
-- Le compilateur le transforme en **IR/bytecode**.
-- Tu build/test avec **Muffin**.
+### En clair
+- Écrire du code en Vitte.
+- Compiler vers un format interne prêt à exécuter ou à brancher un backend.
+- Builder/tester avec Muffin.
 
-### À quoi ça sert
-- Construire des **outils** (CLI), des petits programmes, et une base solide pour aller plus loin.
-- Avoir un projet “langage” qui ne fait pas que de la syntaxe : **build + stdlib + tests**.
+### Ce que Vitte vise
+- Une chaîne complète, pas juste une syntaxe.
+- Une base claire et évolutive pour éviter les hacks.
+- Une expérience de build et de tests cohérente.
+
+### Le repo Vitte
+Le dépôt principal du langage (compilateur, IR/bytecode, stdlib, tests) :
+https://github.com/vitte-lang/vitte
 
 ### Commandes (le minimum)
 
