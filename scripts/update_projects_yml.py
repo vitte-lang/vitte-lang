@@ -132,6 +132,7 @@ def default_project_entry(repo_name, full_name, rules):
         "repo": full_name,
         "logo": "github",
         "color": "2DA44E",
+        "logoColor": "000000",
     }
     lower = repo_name.lower()
     if "vscode" in lower:

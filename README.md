@@ -28,12 +28,12 @@
 ### Projets publics
 
 <!-- PROJECT_BADGES_START -->
-[![vitte-lang](https://img.shields.io/badge?label=vitte-lang&message=public&color=2DA44E&style=for-the-badge&logo=github&logoColor=white)](https://github.com/vitte-lang/vitte-lang)
-[![VitteLangVsCode](https://img.shields.io/badge?label=VitteLangVsCode&message=public&color=2F80ED&style=for-the-badge&logo=visualstudiocode&logoColor=white)](https://github.com/vitte-lang/VitteLangVsCode)
-[![homebrew-vitte](https://img.shields.io/badge?label=homebrew-vitte&message=public&color=F4A261&style=for-the-badge&logo=homebrew&logoColor=white)](https://github.com/vitte-lang/homebrew-vitte)
-[![VitteServerPluginsBackEnd-org](https://img.shields.io/badge?label=VitteServerPluginsBackEnd-org&message=public&color=2DA44E&style=for-the-badge&logo=github&logoColor=white)](https://github.com/vitte-lang/VitteServerPluginsBackEnd-org)
-[![PlatonEditor](https://img.shields.io/badge?label=PlatonEditor&message=public&color=2DA44E&style=for-the-badge&logo=github&logoColor=white)](https://github.com/vitte-lang/PlatonEditor)
-[![linguist](https://img.shields.io/badge?label=linguist&message=public&color=2DA44E&style=for-the-badge&logo=github&logoColor=white)](https://github.com/vitte-lang/linguist)
+[![vitte-lang](https://img.shields.io/badge?label=vitte-lang&message=public&color=2DA44E&style=for-the-badge&logo=github&logoColor=000000)](https://github.com/vitte-lang/vitte-lang)
+[![VitteLangVsCode](https://img.shields.io/badge?label=VitteLangVsCode&message=public&color=2F80ED&style=for-the-badge&logo=visualstudiocode&logoColor=000000)](https://github.com/vitte-lang/VitteLangVsCode)
+[![homebrew-vitte](https://img.shields.io/badge?label=homebrew-vitte&message=public&color=F4A261&style=for-the-badge&logo=homebrew&logoColor=000000)](https://github.com/vitte-lang/homebrew-vitte)
+[![VitteServerPluginsBackEnd-org](https://img.shields.io/badge?label=VitteServerPluginsBackEnd-org&message=public&color=2DA44E&style=for-the-badge&logo=github&logoColor=000000)](https://github.com/vitte-lang/VitteServerPluginsBackEnd-org)
+[![PlatonEditor](https://img.shields.io/badge?label=PlatonEditor&message=public&color=2DA44E&style=for-the-badge&logo=github&logoColor=000000)](https://github.com/vitte-lang/PlatonEditor)
+[![linguist](https://img.shields.io/badge?label=linguist&message=public&color=2DA44E&style=for-the-badge&logo=github&logoColor=000000)](https://github.com/vitte-lang/linguist)
 <!-- PROJECT_BADGES_END -->
 
 ## Vitte — un langage complet pour construire vite et proprement

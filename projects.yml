@@ -3,23 +3,29 @@
   repo: vitte-lang/vitte-lang
   logo: github
   color: 2DA44E
+  logoColor: 000000
 - VitteLangVsCode
   repo: vitte-lang/VitteLangVsCode
   logo: visualstudiocode
   color: 2F80ED
+  logoColor: 000000
 - homebrew-vitte
   repo: vitte-lang/homebrew-vitte
   logo: homebrew
   color: F4A261
+  logoColor: 000000
 - VitteServerPluginsBackEnd-org
   repo: vitte-lang/VitteServerPluginsBackEnd-org
   logo: github
   color: 2DA44E
+  logoColor: 000000
 - PlatonEditor
   repo: vitte-lang/PlatonEditor
   logo: github
   color: 2DA44E
+  logoColor: 000000
 - linguist
   repo: vitte-lang/linguist
   logo: github
   color: 2DA44E
+  logoColor: 000000
