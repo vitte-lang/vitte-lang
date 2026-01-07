@@ -3,6 +3,7 @@ import argparse
 import json
 import os
 import re
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -12,25 +13,34 @@ def gh_get(url, token):
     if token:
         req.add_header("Authorization", f"Bearer {token}")
     req.add_header("Accept", "application/vnd.github+json")
+    req.add_header("User-Agent", "vitte-lang-ci")
     with urllib.request.urlopen(req) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
 
 def fetch_public_repos(org, token):
-    page = 1
-    repos = []
-    while True:
-        url = (
-            f"https://api.github.com/orgs/{org}/repos"
-            f"?per_page=100&page={page}&type=public"
-        )
-        data = gh_get(url, token)
-        if not data:
-            break
-        repos.extend(data)
-        if len(data) < 100:
-            break
-        page += 1
+    def fetch_with_base(base):
+        page = 1
+        repos = []
+        while True:
+            url = (
+                f"https://api.github.com/{base}/{org}/repos"
+                f"?per_page=100&page={page}&type=public"
+            )
+            data = gh_get(url, token)
+            if not data:
+                break
+            repos.extend(data)
+            if len(data) < 100:
+                break
+            page += 1
+        return repos
+    try:
+        repos = fetch_with_base("orgs")
+    except urllib.error.HTTPError as exc:
+        if exc.code != 404:
+            raise
+        repos = fetch_with_base("users")
     return repos
 
 

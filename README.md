@@ -1,31 +1,35 @@
 # Vitte — vitte-lang (WIP)
 
+<p align="left">
+  <b>Langage + toolchain</b> · compilateur · IR/bytecode · Muffin build
+</p>
 
-<!-- Badges rapides -->
-## 📈 Stats publiques GitHub
-
+<!-- Futurist header -->
 <p align="left">
   <img
     height="165"
-    src="https://github-readme-stats-sigma-five.vercel.app/api?username=vitte-lang&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent&cache_seconds=21600"
+    src="https://github-readme-stats-sigma-five.vercel.app/api?username=vitte-lang&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent&title_color=00E5FF&text_color=E6F7FF&icon_color=7CFF6B&ring_color=00E5FF&cache_seconds=21600"
     alt="stats"
   />
   <img
     height="165"
-    src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=vitte-lang&layout=compact&langs_count=8&hide_border=true&theme=transparent&cache_seconds=21600"
+    src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=vitte-lang&layout=compact&langs_count=8&hide_border=true&theme=transparent&title_color=00E5FF&text_color=E6F7FF&cache_seconds=21600"
     alt="top langs"
   />
 </p>
 
+<!-- Badges rapides -->
+![Profile views](https://komarev.com/ghpvc/?username=vitte-lang&style=for-the-badge&color=00E5FF&label=views)
+![Org total](https://img.shields.io/endpoint?style=for-the-badge&label=org%20total&color=00E5FF&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Forg_totals.json)
+![Repo total](https://img.shields.io/endpoint?style=for-the-badge&label=repo%20total&color=7CFF6B&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Frepo_totals.json)
+![Vitte repo](https://img.shields.io/endpoint?style=for-the-badge&label=vitte%20repo&color=FFD166&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Fvitte_repo_totals.json)
 
-
-![Profile views](https://komarev.com/ghpvc/?username=vitte-lang&style=for-the-badge)
-![Org total](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Forg_totals.json)
-![Repo total](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Frepo_totals.json)
-![Vitte repo](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Fvitte_repo_totals.json)
+### Langages (tous les projets)
 
 <!-- Org language mix (generated endpoints) -->
 ![Org languages](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Forg_languages_summary.json)
+
+### Langages (ce dépôt)
 
 
 <!-- Repo language mix (generated endpoints) -->
@@ -37,6 +41,18 @@
 <!-- Language badges -->
 ![Vitte](https://img.shields.io/badge/Vitte-language-6E56CF?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEwIDEyaDEwbDEyIDMwIDEyLTMwaDEwTDM2IDUySDI4eiIvPjwvc3ZnPg%3D%3D&logoColor=white)
 ![Muffin](https://img.shields.io/badge/Muffin-buildfile-FFB703?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwIDIyYzAtNyA2LTEyIDEyLTEyczEyIDUgMTIgMTJjMCA0LTIgNy01IDlsLTEgMnYxN0gyNlYzM2wtMS0yYy0zLTItNS01LTUtOXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIgMzZoMjBsLTIgMThIMjR6Ii8%2BPC9zdmc%2B&logoColor=white)
+
+### Projets publics
+
+<!-- PROJECT_BADGES_START -->
+[![vitte-lang](https://img.shields.io/badge?label=vitte-lang&message=public&color=2DA44E&style=for-the-badge&logo=github&logoColor=white)](https://github.com/vitte-lang/vitte-lang)
+[![vitte](https://img.shields.io/badge?label=vitte&message=public&color=2DA44E&style=for-the-badge&logo=github&logoColor=white)](https://github.com/vitte-lang/vitte)
+[![VitteLangVsCode](https://img.shields.io/badge?label=VitteLangVsCode&message=public&color=2F80ED&style=for-the-badge&logo=visualstudiocode&logoColor=white)](https://github.com/vitte-lang/VitteLangVsCode)
+[![homebrew-vitte](https://img.shields.io/badge?label=homebrew-vitte&message=public&color=F4A261&style=for-the-badge&logo=homebrew&logoColor=white)](https://github.com/vitte-lang/homebrew-vitte)
+[![VitteServerPluginsBackEnd-org](https://img.shields.io/badge?label=VitteServerPluginsBackEnd-org&message=public&color=2DA44E&style=for-the-badge&logo=github&logoColor=white)](https://github.com/vitte-lang/VitteServerPluginsBackEnd-org)
+[![PlatonEditor](https://img.shields.io/badge?label=PlatonEditor&message=public&color=2DA44E&style=for-the-badge&logo=github&logoColor=white)](https://github.com/vitte-lang/PlatonEditor)
+[![linguist](https://img.shields.io/badge?label=linguist&message=public&color=2DA44E&style=for-the-badge&logo=github&logoColor=white)](https://github.com/vitte-lang/linguist)
+<!-- PROJECT_BADGES_END -->
 
 ## Vitte — un langage complet pour construire vite et proprement
 
