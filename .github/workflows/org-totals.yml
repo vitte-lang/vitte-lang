@@ -19,20 +19,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python3 scripts/update_org_totals.py vitte-lang badges/org_totals.json
+          python3 scripts/update_org_totals.py vitte-lang badges/org_totals.json --exclude-archived --exclude-forks
 
       - name: Update languages JSON
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python3 scripts/update_org_languages.py vitte-lang badges/org_languages_summary.json
-
-      - name: Update vitte repo totals JSON
-        if: ${{ secrets.VITTE_REPO_TOKEN != '' }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.VITTE_REPO_TOKEN }}
-        run: |
-          python3 scripts/update_repo_totals.py vitte-lang vitte badges/vitte_repo_totals.json "vitte repo"
+          python3 scripts/update_org_languages.py vitte-lang badges/org_languages_summary.json --exclude-archived --exclude-forks
 
       - name: Commit changes
         run: |
