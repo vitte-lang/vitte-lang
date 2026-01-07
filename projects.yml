@@ -1,0 +1,29 @@
+# Public projects (ordered)
+- vitte-lang
+  repo: vitte-lang/vitte-lang
+  logo: github
+  color: 2DA44E
+- vitte
+  repo: vitte-lang/vitte
+  logo: github
+  color: 2DA44E
+- VitteLangVsCode
+  repo: vitte-lang/VitteLangVsCode
+  logo: visualstudiocode
+  color: 2F80ED
+- homebrew-vitte
+  repo: vitte-lang/homebrew-vitte
+  logo: homebrew
+  color: F4A261
+- VitteServerPluginsBackEnd-org
+  repo: vitte-lang/VitteServerPluginsBackEnd-org
+  logo: github
+  color: 2DA44E
+- PlatonEditor
+  repo: vitte-lang/PlatonEditor
+  logo: github
+  color: 2DA44E
+- linguist
+  repo: vitte-lang/linguist
+  logo: github
+  color: 2DA44E

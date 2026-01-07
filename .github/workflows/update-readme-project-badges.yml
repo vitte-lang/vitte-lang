@@ -1,0 +1,39 @@
+name: Update README project badges
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "projects.yml"
+      - "scripts/generate_project_badges.py"
+      - "README.md"
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update README project badges
+        run: |
+          python3 scripts/generate_project_badges.py projects.yml README.md
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "chore: update README project badges"
+          git push
