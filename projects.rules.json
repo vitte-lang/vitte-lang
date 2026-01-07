@@ -2,12 +2,10 @@
   "rules": [
     {
       "name_contains": "vscode",
-      "logo": "visualstudiocode",
       "color": "2F80ED"
     },
     {
       "name_contains": "homebrew",
-      "logo": "homebrew",
       "color": "F4A261"
     }
   ]

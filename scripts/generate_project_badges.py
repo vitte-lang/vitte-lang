@@ -28,13 +28,10 @@ def badge_line(project):
     label = project["name"]
     repo = project["repo"]
     color = project.get("color", "2DA44E")
-    logo = project.get("logo", "github")
-    logo_color = project.get("logoColor", "000000")
     return (
         f"[![{label}]"
         f"(https://img.shields.io/badge?label={label}"
-        f"&message=public&color={color}&style=for-the-badge"
-        f"&logo={logo}&logoColor={logo_color})]"
+        f"&message=public&color={color}&style=for-the-badge)]"
         f"(https://github.com/{repo})"
     )
 

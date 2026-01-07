@@ -130,16 +130,12 @@ def default_project_entry(repo_name, full_name, rules):
     entry = {
         "name": repo_name,
         "repo": full_name,
-        "logo": "github",
         "color": "2DA44E",
-        "logoColor": "000000",
     }
     lower = repo_name.lower()
     if "vscode" in lower:
-        entry["logo"] = "visualstudiocode"
         entry["color"] = "2F80ED"
     if "homebrew" in lower:
-        entry["logo"] = "homebrew"
         entry["color"] = "F4A261"
     apply_rules(entry, rules, repo_name, full_name)
     return entry
@@ -150,8 +146,10 @@ def write_projects(path: Path, projects):
     for project in projects:
         lines.append(f"- {project['name']}")
         lines.append(f"  repo: {project['repo']}")
-        lines.append(f"  logo: {project.get('logo', 'github')}")
         lines.append(f"  color: {project.get('color', '2DA44E')}")
+        logo = project.get("logo")
+        if logo:
+            lines.append(f"  logo: {logo}")
         logo_color = project.get("logoColor")
         if logo_color:
             lines.append(f"  logoColor: {logo_color}")
