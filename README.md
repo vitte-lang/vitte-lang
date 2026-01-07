@@ -54,8 +54,7 @@ garder un flux simple, fiable et reproductible.
 - Une expérience de build et de tests cohérente.
 
 ### Le repo Vitte
-Le dépôt principal du langage (compilateur, IR/bytecode, stdlib, tests) :
-https://github.com/vitte-lang/vitte
+Le dépôt principal du langage (compilateur, IR/bytecode, stdlib, tests) est privé.
 
 ### Commandes (le minimum)
 
