@@ -20,3 +20,6 @@
 - muffin
   repo: vitte-lang/muffin
   color: 2DA44E
+- muffin-org
+  repo: vitte-lang/muffin-org
+  color: 2DA44E

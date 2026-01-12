@@ -35,6 +35,7 @@
 - [PlatonEditor](https://github.com/vitte-lang/PlatonEditor)
 - [linguist](https://github.com/vitte-lang/linguist)
 - [muffin](https://github.com/vitte-lang/muffin)
+- [muffin-org](https://github.com/vitte-lang/muffin-org)
 <!-- PROJECT_BADGES_END -->
 
 ## Vitte — un langage complet pour construire vite et proprement
