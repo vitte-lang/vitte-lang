@@ -37,6 +37,7 @@
 - [muffin](https://github.com/vitte-lang/muffin)
 - [muffin-org](https://github.com/vitte-lang/muffin-org)
 - [steel.org](https://github.com/vitte-lang/steel.org)
+- [OldSteel](https://github.com/vitte-lang/OldSteel)
 <!-- PROJECT_BADGES_END -->
 
 ## Vitte — un langage complet pour construire vite et proprement
