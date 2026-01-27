@@ -1,5 +1,4 @@
-# Vitte — vitte-lang (WIP)
-
+# Vitte — vitte-lang
 
 <!-- Badges rapides -->
 ![Profile views](https://komarev.com/ghpvc/?username=vitte-lang&style=for-the-badge&color=00E5FF&label=views)
@@ -34,8 +33,6 @@
 - [VitteServerPluginsBackEnd-org](https://github.com/vitte-lang/VitteServerPluginsBackEnd-org)
 - [PlatonEditor](https://github.com/vitte-lang/PlatonEditor)
 - [linguist](https://github.com/vitte-lang/linguist)
-- [muffin](https://github.com/vitte-lang/muffin)
-- [muffin-org](https://github.com/vitte-lang/muffin-org)
 - [steel.org](https://github.com/vitte-lang/steel.org)
 - [OldSteel](https://github.com/vitte-lang/OldSteel)
 - [SteelVscode](https://github.com/vitte-lang/SteelVscode)
@@ -65,14 +62,8 @@ Le dépôt principal du langage (compilateur, IR/bytecode, stdlib, tests) est pr
 
 ```bash
 # build tout
-muffin build -all
+steel build steelconf
 
-# build debug / release
-muffin build -debug
-muffin build -release
-
-# valider le projet
-muffin validate
 ```
 
 ---
@@ -107,84 +98,133 @@ Les détails changent souvent : l’idée est d’avancer vite, sans casser ce q
 
 ## ✨ Exemples
 
-### Exemple Vitte (hello)
+### Exemple Vitte (demp)
 
 ```vit
-# examples/hello/hello.vit
+vitte 1.0
+space demo/app
 
-mod examples.hello
+<<< doc
+  Exemple Vitte — démonstration minimale.
+>>>
 
-fn main() -> i32
-  say "hello from Vitte"
-  ret 0
+pull std/io as io
+pull std/text as text
+
+share all
+
+
+# ----------------------------
+# Types
+# ----------------------------
+
+form User
+  field id   as U32
+  field name as Text
+.end
+
+pick Status
+  case Ok()
+  case Err(code as U32)
+.end
+
+
+# ----------------------------
+# Fonctions
+# ----------------------------
+
+#[inline]
+proc greet(u as User) gives Text
+  give text.join("Hello, ", u.name)
+.end
+
+
+# ----------------------------
+# Logique
+# ----------------------------
+
+proc run(flag as Bool) gives Status
+  if flag
+    emit greet(User(id=1u32, name="Alice"))
+    give Status.Ok()
+  .end
+  otherwise
+    give Status.Err(42u32)
+  .end
+.end
+
+
+# ----------------------------
+# Point d’entrée
+# ----------------------------
+
+entry app at demo/app
+  make ok as Bool = true
+  make st as Status = run(ok)
+
+  select st
+  when Status.Ok()
+    emit "Done"
+  .end
+  otherwise
+    emit "Failed"
+  .end
 .end
 ```
 
-### Exemple Vitte (style vitte_amber)
 
-```vit
-# examples/token_dump/token_dump.vit
 
-use vitte_amber.types::{TokenKind, token_kind_name}
 
-mod examples.token_dump
+### Exemple Syntaxe !muf4 pour Steel (steelconf)
 
-fn main() -> i32
-  let k = TokenKind::KwFn
-  say token_kind_name(k)
-  ret 0
-.end
+```steelconf
+!muf 4
+;; Exemple complet: bakes build_debug/build_release et sorties ciblees
+
+[workspace]
+  .set name "example-c"
+  .set root "."
+  .set target_dir "target"
+  .set profile "release"
+..
+
+[profile debug]
+  .set opt 0
+  .set debug 1
+..
+
+[profile release]
+  .set opt 2
+  .set debug 0
+..
+
+[tool cc]
+  .exec "cc"
+..
+
+[bake build_debug]
+  .make c_src cglob "src/**/*.c"
+  [run cc]
+    .set "-O${opt}" 1
+    .set "-g" "${debug}"
+    .takes c_src as "@args"
+    .emits exe as "-o"
+  ..
+  .output exe "target/out/c_app_debug"
+..
+
+[bake build_release]
+  .make c_src cglob "src/**/*.c"
+  [run cc]
+    .set "-O${opt}" 1
+    .set "-g" "${debug}"
+    .takes c_src as "@args"
+    .emits exe as "-c"
+  ..
+  .output exe "target/out/c_app_release"
+..
 ```
 
-### Exemple Muffin (build.muf)
-
-```muf
-# build.muf — Muffin Bakefile v2 (exemple)
-
-muf 2
-
-workspace "vitte-lang"
-  root "."
-  out  "out/"
-.end
-
-package "vitte_amber"
-  version "0.1.0"
-  description "Lexer + Token stream + Bytecode IR for Vitte (example module)."
-  license "MIT"
-.end
-
-profile "debug"
-  opt 0
-  debug true
-.end
-
-profile "release"
-  opt 3
-  debug false
-  lto true
-.end
-
-target "vitte_amber"
-  kind "lib"
-  lang "vit"
-  src  "src/"
-  entry "src/lib.vit"
-  out   "out/vitte_amber"
-  profile use "debug"
-.end
-```
-
-## Projet en privé
-
-Le dépôt est maintenu en privé tant que ces éléments ne sont pas suffisamment stabilisés :
-
-- grammaire (référence parser + référence EBNF),
-- conventions de modules/stdlib,
-- pipeline de build et packaging,
-- conventions ABI/callconv par target.
-
-L’objectif est d’éviter de figer trop tôt des interfaces publiques.
 
 ---
 
