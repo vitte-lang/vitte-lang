@@ -33,8 +33,6 @@
 - [VitteServerPluginsBackEnd-org](https://github.com/vitte-lang/VitteServerPluginsBackEnd-org)
 - [PlatonEditor](https://github.com/vitte-lang/PlatonEditor)
 - [linguist](https://github.com/vitte-lang/linguist)
-- [muffin](https://github.com/vitte-lang/muffin)
-- [muffin-org](https://github.com/vitte-lang/muffin-org)
 - [steel.org](https://github.com/vitte-lang/steel.org)
 - [OldSteel](https://github.com/vitte-lang/OldSteel)
 - [SteelVscode](https://github.com/vitte-lang/SteelVscode)
