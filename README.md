@@ -60,13 +60,7 @@ garder un flux simple, fiable et reproductible.
 ### Le repo Vitte
 Le dépôt principal du langage (compilateur, IR/bytecode, stdlib, tests) est privé.
 
-### Commandes (le minimum)
 
-```bash
-# build tout
-steel build steelconf
-
-```
 
 ---
 
@@ -100,7 +94,7 @@ Les détails changent souvent : l’idée est d’avancer vite, sans casser ce q
 
 ## ✨ Exemples
 
-### Exemple Vitte (demp)
+### Exemple Vitte (demo)
 
 ```vit
 vitte 1.0
@@ -226,7 +220,13 @@ entry app at demo/app
   .output exe "target/out/c_app_release"
 ..
 ```
+### Commandes (le minimum)
 
+```bash
+# build tout
+steel build steelconf
+
+```
 
 ---
 
