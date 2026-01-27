@@ -60,39 +60,20 @@ garder un flux simple, fiable et reproductible.
 ### Le repo Vitte
 Le dépôt principal du langage (compilateur, IR/bytecode, stdlib, tests) est privé.
 
-
-
 ---
 
-## Objectifs
+##  Exemples
 
-- Avoir un **compilateur qui marche** (lexer + parser + diagnostics).
-- Avoir une **stdlib utile** (modules testés).
-- Avoir un **build/packaging** simple et reproductible via Muffin.
+### Hello World 
 
----
+```vit
+vitte 1.0
+space hello
 
-## État actuel
-
-Le dépôt progresse par briques “compilateur” et “infrastructure” :
-
-- **Compiler** : tokens → AST → transformations.
-- **IR/Bytecode** : format interne pour exécuter/brancher un backend.
-- **Muffin + tests** : builds reproductibles + garde-fous.
-
-Les détails changent souvent : l’idée est d’avancer vite, sans casser ce qui marche.
-
----
-
-## Choix de conception
-
-- **Reproductible** : mêmes inputs → mêmes outputs.
-- **Core interne** : plus simple à tester et à faire évoluer.
-- **Modules clairs** : compiler/stdlib/build séparés.
-
----
-
-## ✨ Exemples
+entry app at hello
+  emit "Hello, Vitte"
+.end
+```
 
 ### Exemple Vitte (demo)
 
@@ -225,19 +206,9 @@ entry app at demo/app
 ```bash
 # build tout
 steel build steelconf
-
+# ou bien:
+steel run
 ```
-
----
-
-## Roadmap (haute-niveau)
-
-- Stabilisation de la grammaire et des conventions de surface
-- Renforcement des diagnostics et des tests
-- Consolidation ABI/callconv (impls par arch/OS)
-- Progression vers le self-hosting (stage1 → stage2)
-- Durcissement packaging (versioning, dépendances, reproductibilité)
-
 ---
 
 ## Publication
