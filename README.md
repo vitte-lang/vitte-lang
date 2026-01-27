@@ -44,13 +44,13 @@
 
 Vitte est un nouveau langage de programmation en construction, pensé pour livrer
 des outils et des petits programmes sans bricolage.
-Il combine un compilateur, une IR/bytecode et un outil de build (Muffin) pour
+Il combine un compilateur, une IR/bytecode et un outil de build (Steel) pour
 garder un flux simple, fiable et reproductible.
 
 ### En clair
 - Écrire du code en Vitte.
 - Compiler vers un format interne prêt à exécuter ou à brancher un backend.
-- Builder/tester avec Muffin.
+- Builder/tester avec Steel.
 
 ### Ce que Vitte vise
 - Une chaîne complète, pas juste une syntaxe.
@@ -149,7 +149,7 @@ entry app at demo/app
 .end
 ```
 
-
+---
 
 
 ### Exemple Syntaxe !muf4 pour Steel (steelconf)
