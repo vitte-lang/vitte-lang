@@ -32,3 +32,9 @@
 - SteelVscode
   repo: vitte-lang/SteelVscode
   color: 2F80ED
+- steel
+  repo: vitte-lang/steel
+  color: 2DA44E
+- weather-pro
+  repo: vitte-lang/weather-pro
+  color: 2DA44E

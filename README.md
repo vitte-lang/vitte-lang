@@ -38,6 +38,8 @@
 - [steel.org](https://github.com/vitte-lang/steel.org)
 - [OldSteel](https://github.com/vitte-lang/OldSteel)
 - [SteelVscode](https://github.com/vitte-lang/SteelVscode)
+- [steel](https://github.com/vitte-lang/steel)
+- [weather-pro](https://github.com/vitte-lang/weather-pro)
 <!-- PROJECT_BADGES_END -->
 
 ## Vitte — un langage complet pour construire vite et proprement
