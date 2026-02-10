@@ -38,3 +38,9 @@
 - weather-pro
   repo: vitte-lang/weather-pro
   color: 2DA44E
+- vitte
+  repo: vitte-lang/vitte
+  color: 2DA44E
+- vitte.org
+  repo: vitte-lang/vitte.org
+  color: 2DA44E
