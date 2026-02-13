@@ -42,6 +42,7 @@
 - [weather-pro](https://github.com/vitte-lang/weather-pro)
 - [vitte](https://github.com/vitte-lang/vitte)
 - [vitte.org](https://github.com/vitte-lang/vitte.org)
+- [vitte-corpus](https://github.com/vitte-lang/vitte-corpus)
 <!-- PROJECT_BADGES_END -->
 
 ## Vitte — un langage complet pour construire vite et proprement

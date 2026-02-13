@@ -44,3 +44,6 @@
 - vitte.org
   repo: vitte-lang/vitte.org
   color: 2DA44E
+- vitte-corpus
+  repo: vitte-lang/vitte-corpus
+  color: 2DA44E
