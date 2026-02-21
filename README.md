@@ -46,81 +46,99 @@ garder un flux simple, fiable et reproductible.
 
 ---
 ```vit
-##  Exemples
-
-
-
+<<<
+Application simple complète en Vitte
+Structure:
+- space
+- form
+- pick
+- procédures
+- boucle
+- condition
+- entry
+>>>
 
 space demo/app
 
-<<< doc
-  Exemple conforme à vitte.ebnf (surface syntax officielle)
->>>
+<<< =========================
+Types
+========================= >>>
 
-pull std/io   as io
-pull std/text as text
-
-share all
-
-
-# ----------------------------
-# Types
-# ----------------------------
-
-form User {
-  id   as U32
-  name as Text
+form User
+{
+    name: string
+    age: i32
 }
 
-pick Status {
-  Ok()
-  Err(code as U32)
+pick Status
+{
+    Active
+    Inactive
 }
 
+<<< =========================
+Fonctions métier
+========================= >>>
 
-# ----------------------------
-# Fonctions
-# ----------------------------
-
-#[inline]
-proc greet(u as User) gives Text {
-  give text.join("Hello, ", u.name)
-}
-
-
-proc run(flag as Bool) gives Status {
-  if flag {
-    emit greet(User { id = 1u32, name = "Alice" })
-    give Status.Ok()
-  } otherwise {
-    give Status.Err(42u32)
-  }
-}
-
-
-# ----------------------------
-# Entrypoint
-# ----------------------------
-
-entry app at demo/app {
-  make ok as Bool = true
-  make st as Status = run(ok)
-
-  select st {
-    when Status.Ok() {
-      emit "Done"
+proc is_adult(age: i32) gives bool
+{
+    if age >= 18
+    {
+        give true
     }
-    when Status.Err(code) {
-      emit text.join("Error: ", text.from_u32(code))
+    otherwise
+    {
+        give false
     }
-    otherwise {
-      emit "Unknown state"
-    }
-  }
 }
 
----
+proc print_user(u: User) gives i32
+{
+    emit "User:"
+    emit u.name
+    emit u.age
 
+    if is_adult(u.age)
+    {
+        emit "Status: Adult"
+    }
+    otherwise
+    {
+        emit "Status: Minor"
+    }
+
+    give 0
+}
+
+<<< =========================
+Main
+========================= >>>
+
+proc main() gives i32
+{
+    make user = User { name: "Vincent", age: 25 }
+
+    make i: i32 = 0
+
+    <<< boucle simple >>>
+    loop while i < 3
+    {
+        emit "Iteration:"
+        emit i
+        set i = i + 1
+    }
+
+    give print_user(user)
+}
+
+<<< =========================
+Entry point
+========================= >>>
+
+entry at demo/app
+{
+    give main()
+}
 
 ### Exemple Syntaxe !muf4 pour Steel (steelconf)
 
