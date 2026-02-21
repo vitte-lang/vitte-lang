@@ -24,25 +24,6 @@
 ![Vitte](https://img.shields.io/badge/Vitte-language-6E56CF?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEwIDEyaDEwbDEyIDMwIDEyLTMwaDEwTDM2IDUySDI4eiIvPjwvc3ZnPg%3D%3D&logoColor=white)
 ![Steel](https://img.shields.io/badge/Vitte-command-file-FFB703?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwIDIyYzAtNyA2LTEyIDEyLTEyczEyIDUgMTIgMTJjMCA0LTIgNy01IDlsLTEgMnYxN0gyNlYzM2wtMS0yYy0zLTItNS01LTUtOXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIgMzZoMjBsLTIgMThIMjR6Ii8%2BPC9zdmc%2B&logoColor=white)
 
-### Projets publics
-
-<!-- PROJECT_BADGES_START -->
-- [vitte-lang](https://github.com/vitte-lang/vitte-lang)
-- [VitteLangVsCode](https://github.com/vitte-lang/VitteLangVsCode)
-- [homebrew-vitte](https://github.com/vitte-lang/homebrew-vitte)
-- [VitteServerPluginsBackEnd-org](https://github.com/vitte-lang/VitteServerPluginsBackEnd-org)
-- [PlatonEditor](https://github.com/vitte-lang/PlatonEditor)
-- [linguist](https://github.com/vitte-lang/linguist)
-- [muffin](https://github.com/vitte-lang/muffin)
-- [muffin-org](https://github.com/vitte-lang/muffin-org)
-- [steel.org](https://github.com/vitte-lang/steel.org)
-- [OldSteel](https://github.com/vitte-lang/OldSteel)
-- [SteelVscode](https://github.com/vitte-lang/SteelVscode)
-- [steel](https://github.com/vitte-lang/steel)
-- [weather-pro](https://github.com/vitte-lang/weather-pro)
-- [vitte](https://github.com/vitte-lang/vitte)
-- [vitte.org](https://github.com/vitte-lang/vitte.org)
-- [vitte-corpus](https://github.com/vitte-lang/vitte-corpus)
 <!-- PROJECT_BADGES_END -->
 
 ## Vitte — un langage complet pour construire vite et proprement
@@ -79,18 +60,13 @@ entry app at hello
   emit "Hello, Vitte"
 .end
 ```
-
-### Exemple Vitte (demo)
-
-```vit
-vitte 1.0
 space demo/app
 
 <<< doc
-  Exemple Vitte — démonstration minimale.
+  Exemple conforme à vitte.ebnf (surface syntax officielle)
 >>>
 
-pull std/io as io
+pull std/io   as io
 pull std/text as text
 
 share all
@@ -100,15 +76,15 @@ share all
 # Types
 # ----------------------------
 
-form User
-  field id   as U32
-  field name as Text
-.end
+form User {
+  id   as U32
+  name as Text
+}
 
-pick Status
-  case Ok()
-  case Err(code as U32)
-.end
+pick Status {
+  Ok()
+  Err(code as U32)
+}
 
 
 # ----------------------------
@@ -116,43 +92,41 @@ pick Status
 # ----------------------------
 
 #[inline]
-proc greet(u as User) gives Text
+proc greet(u as User) gives Text {
   give text.join("Hello, ", u.name)
-.end
+}
 
 
-# ----------------------------
-# Logique
-# ----------------------------
-
-proc run(flag as Bool) gives Status
-  if flag
-    emit greet(User(id=1u32, name="Alice"))
+proc run(flag as Bool) gives Status {
+  if flag {
+    emit greet(User { id = 1u32, name = "Alice" })
     give Status.Ok()
-  .end
-  otherwise
+  } otherwise {
     give Status.Err(42u32)
-  .end
-.end
+  }
+}
 
 
 # ----------------------------
-# Point d’entrée
+# Entrypoint
 # ----------------------------
 
-entry app at demo/app
+entry app at demo/app {
   make ok as Bool = true
   make st as Status = run(ok)
 
-  select st
-  when Status.Ok()
-    emit "Done"
-  .end
-  otherwise
-    emit "Failed"
-  .end
-.end
-```
+  select st {
+    when Status.Ok() {
+      emit "Done"
+    }
+    when Status.Err(code) {
+      emit text.join("Error: ", text.from_u32(code))
+    }
+    otherwise {
+      emit "Unknown state"
+    }
+  }
+}
 
 ---
 
