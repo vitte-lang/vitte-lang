@@ -43,23 +43,14 @@ garder un flux simple, fiable et reproductible.
 - Une base claire et évolutive pour éviter les hacks.
 - Une expérience de build et de tests cohérente.
 
-### Le repo Vitte
-Le dépôt principal du langage (compilateur, IR/bytecode, stdlib, tests) est privé.
 
 ---
-
+```vit
 ##  Exemples
 
-### Hello World 
 
-```vit
-vitte 1.0
-space hello
 
-entry app at hello
-  emit "Hello, Vitte"
-.end
-```
+
 space demo/app
 
 <<< doc
