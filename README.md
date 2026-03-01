@@ -139,6 +139,8 @@ entry at demo/app
 {
     give main()
 }
+```
+---
 
 ### Exemple Syntaxe !muf4 pour Steel (steelconf)
 
