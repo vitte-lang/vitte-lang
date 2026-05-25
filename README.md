@@ -1,5 +1,5 @@
 # Vitte — vitte-lang
-![Vitte Repo](https://github.com/vitte-lang/vitte)
+🔵 **V** [Vitte — GitHub](https://github.com/vitte-lang/vitte)
 <!-- Badges rapides -->
 ![Profile views](https://komarev.com/ghpvc/?username=vitte-lang&style=for-the-badge&color=00E5FF&label=views)
 ![Org total](https://img.shields.io/endpoint?style=for-the-badge&label=org%20total&color=00E5FF&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Forg_totals.json)
