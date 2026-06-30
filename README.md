@@ -5,15 +5,34 @@
 ![Org total](https://img.shields.io/endpoint?style=for-the-badge&label=org%20total&color=00E5FF&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Forg_totals.json)
 ![Repo total](https://img.shields.io/endpoint?style=for-the-badge&label=repo%20total&color=7CFF6B&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Frepo_totals.json)
 ![Vitte repo](https://img.shields.io/endpoint?style=for-the-badge&label=vitte%20repo&color=FFD166&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Fvitte_repo_totals.json)
+# Vitte — vitte-lang
 
+🟦 **Le langage Vitte** — https://github.com/vitte-lang/vitte
+
+![GitHub stars](https://img.shields.io/github/stars/vitte-lang/vitte?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/vitte-lang/vitte?style=for-the-badge)
+![GitHub watchers](https://img.shields.io/github/watchers/vitte-lang/vitte?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/vitte-lang/vitte?style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/vitte-lang/vitte?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/vitte-lang/vitte?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/vitte-lang/vitte?style=for-the-badge)
+![GitHub code size](https://img.shields.io/github/languages/code-size/vitte-lang/vitte?style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/vitte-lang/vitte?style=for-the-badge)
+![GitHub license](https://img.shields.io/github/license/vitte-lang/vitte?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/vitte-lang/vitte?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/vitte-lang/vitte?style=for-the-badge)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/vitte-lang/vitte?style=for-the-badge)
+![GitHub release](https://img.shields.io/github/v/release/vitte-lang/vitte?style=for-the-badge)
+![GitHub downloads](https://img.shields.io/github/downloads/vitte-lang/vitte/total?style=for-the-badge)
+![GitHub Discussions](https://img.shields.io/github/discussions/vitte-lang/vitte?style=for-the-badge)
+![GitHub Actions](https://img.shields.io/github/actions/workflow/status/vitte-lang/vitte/ci.yml?style=for-the-badge&label=CI)
+![GitHub Pages](https://img.shields.io/github/deployments/vitte-lang/vitte/github-pages?style=for-the-badge&label=Docs)
 ### Langages (tous les projets)
 
 <!-- Org language mix (generated endpoints) -->
 ![Org languages](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Forg_languages_summary.json)
 
 ### Langages (ce dépôt)
-
-
 <!-- Repo language mix (generated endpoints) -->
 ![Languages](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Flanguages_summary.json)
 ![Vitte %](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Flang_vitte.json)
