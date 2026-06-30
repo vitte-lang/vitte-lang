@@ -1,7 +1,8 @@
 # Vitte — vitte-lang
 
-🟦 **Le langage Vitte** — https://github.com/vitte-lang/vitte
+**Le langage Vitte** 
 
+![Vitte Lang](https://github.com/vitte-lang/vitte)
 ![Profile views](https://komarev.com/ghpvc/?username=vitte-lang&style=for-the-badge&color=00E5FF&label=views)
 ![Org total](https://img.shields.io/endpoint?style=for-the-badge&label=org%20total&color=00E5FF&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Forg_totals.json)
 ![Repo total](https://img.shields.io/endpoint?style=for-the-badge&label=repo%20total&color=7CFF6B&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvitte-lang%2Fvitte-lang%2Fmain%2Fbadges%2Frepo_totals.json)
