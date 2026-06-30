@@ -1,6 +1,6 @@
 # Vitte — vitte-lang
 
-**Le langage Vitte** 
+
 
 ![Vitte Logo](https://github.com/vitte-lang/vitte/blob/main/assets/logo.png?raw=1)
 ![Profile views](https://komarev.com/ghpvc/?username=vitte-lang&style=for-the-badge&color=00E5FF&label=views)
