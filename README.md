@@ -46,101 +46,348 @@ garder un flux simple, fiable et reproductible.
 
 ---
 ```vit
-<<<
-Application simple complète en Vitte
-Structure:
-- space
-- form
-- pick
-- procédures
-- boucle
-- condition
-- entry
->>>
+space demo;
 
-space demo/app
+use std.io.{
+    print,
+    println
+};
 
-<<< =========================
-Types
-========================= >>>
+use std.math.{
+    abs,
+    max,
+    min
+};
+
+const VERSION: string = "1.0.0";
+const MAX_USERS: int = 1024;
+
+pick Role
+{
+    Guest,
+    User,
+    Moderator,
+    Administrator
+}
+
+pick Result<T, E>
+{
+    Ok(T),
+    Err(E)
+}
+
+form Address
+{
+    city: string;
+    country: string;
+}
 
 form User
 {
-    name: string
-    age: i32
+    id: u64;
+    name: string;
+    age: int;
+    active: bool;
+    role: Role;
+    address: Address;
 }
 
-pick Status
+proc make_user(
+    id: u64,
+    name: string,
+    age: int,
+    city: string,
+    country: string
+) -> User
 {
-    Active
-    Inactive
+    give User{
+        id: id,
+        name: name,
+        age: age,
+        active: true,
+        role: Role::User,
+        address: Address{
+            city: city,
+            country: country
+        }
+    };
 }
 
-<<< =========================
-Fonctions métier
-========================= >>>
-
-proc is_adult(age: i32) gives bool
+proc birthday(user: User) -> User
 {
-    if age >= 18
-    {
-        give true
-    }
-    otherwise
-    {
-        give false
-    }
+    give User{
+        id: user.id,
+        name: user.name,
+        age: user.age + 1,
+        active: user.active,
+        role: user.role,
+        address: user.address
+    };
 }
 
-proc print_user(u: User) gives i32
+proc sum(values: [int]) -> int
 {
-    emit "User:"
-    emit u.name
-    emit u.age
+    let total: int = 0;
+    let i: int = 0;
 
-    if is_adult(u.age)
+    while i < len(values)
     {
-        emit "Status: Adult"
-    }
-    otherwise
-    {
-        emit "Status: Minor"
-    }
-
-    give 0
-}
-
-<<< =========================
-Main
-========================= >>>
-
-proc main() gives i32
-{
-    make user = User { name: "Vincent", age: 25 }
-
-    make i: i32 = 0
-
-    <<< boucle simple >>>
-    loop while i < 3
-    {
-        emit "Iteration:"
-        emit i
-        set i = i + 1
+        set total = total + values[i];
+        set i = i + 1;
     }
 
-    give print_user(user)
+    give total;
 }
 
-<<< =========================
-Entry point
-========================= >>>
-
-entry at demo/app
+proc average(values: [int]) -> f64
 {
-    give main()
+    if len(values) == 0
+    {
+        give 0.0;
+    }
+
+    give sum(values) / len(values);
 }
-```
----
+
+proc factorial(value: int) -> int
+{
+    if value <= 1
+    {
+        give 1;
+    }
+
+    give value * factorial(value - 1);
+}
+
+proc fibonacci(value: int) -> int
+{
+    if value <= 1
+    {
+        give value;
+    }
+
+    give fibonacci(value - 1) + fibonacci(value - 2);
+}
+
+proc clamp(value: int, low: int, high: int) -> int
+{
+    if value < low
+    {
+        give low;
+    }
+
+    if value > high
+    {
+        give high;
+    }
+
+    give value;
+}
+
+proc identity<T>(value: T) -> T
+{
+    give value;
+}
+
+proc swap<T>(a: T, b: T) -> (T, T)
+{
+    give (b, a);
+}
+
+proc is_even(value: int) -> bool
+{
+    give value % 2 == 0;
+}
+
+proc divide(a: int, b: int) -> Result<int, string>
+{
+    if b == 0
+    {
+        give Result::Err("division by zero");
+    }
+
+    give Result::Ok(a / b);
+}
+
+proc print_role(role: Role)
+{
+    match role
+    {
+        Role::Guest =>
+        {
+            println("guest");
+        }
+
+        Role::User =>
+        {
+            println("user");
+        }
+
+        Role::Moderator =>
+        {
+            println("moderator");
+        }
+
+        Role::Administrator =>
+        {
+            println("administrator");
+        }
+    }
+}
+
+proc demo_conditions(value: int)
+{
+    if value < 0
+    {
+        println("negative");
+    }
+    else if value == 0
+    {
+        println("zero");
+    }
+    else
+    {
+        println("positive");
+    }
+}
+
+proc demo_loop()
+{
+    let i: int = 0;
+
+    while i < 10
+    {
+        print(i);
+        set i = i + 1;
+    }
+}
+
+proc demo_array()
+{
+    let values: [int] = [
+        5,
+        10,
+        15,
+        20
+    ];
+
+    println(len(values));
+    println(sum(values));
+    println(average(values));
+}
+
+proc demo_users()
+{
+    let users: [User] = [];
+
+    let alice = make_user(
+        1,
+        "Alice",
+        25,
+        "Paris",
+        "France"
+    );
+
+    let bob = make_user(
+        2,
+        "Bob",
+        31,
+        "London",
+        "United Kingdom"
+    );
+
+    set users = users + [alice];
+    set users = users + [bob];
+
+    let i: int = 0;
+
+    while i < len(users)
+    {
+        println(users[i].name);
+        println(users[i].age);
+
+        set i = i + 1;
+    }
+}
+
+proc main() -> int
+{
+    println("Vitte");
+    println(VERSION);
+
+    let numbers: [int] = [
+        1,
+        2,
+        3,
+        4,
+        5
+    ];
+
+    println(sum(numbers));
+    println(average(numbers));
+
+    println(factorial(6));
+    println(fibonacci(12));
+
+    println(clamp(120, 0, 100));
+
+    let value = identity(42);
+    println(value);
+
+    let first = 10;
+    let second = 20;
+
+    let (a, b) = swap(first, second);
+
+    println(a);
+    println(b);
+
+    println(is_even(18));
+
+    let result = divide(10, 2);
+
+    match result
+    {
+        Result::Ok(value) =>
+        {
+            println(value);
+        }
+
+        Result::Err(message) =>
+        {
+            println(message);
+        }
+    }
+
+    let user = make_user(
+        1,
+        "Vincent",
+        29,
+        "Paris",
+        "France"
+    );
+
+    let updated = birthday(user);
+
+    println(updated.name);
+    println(updated.age);
+
+    print_role(updated.role);
+
+    demo_conditions(-5);
+    demo_conditions(0);
+    demo_conditions(8);
+
+    demo_loop();
+    demo_array();
+    demo_users();
+
+    println(abs(-50));
+    println(max(100, 200));
+    println(min(100, 200));
+
+    give 0;
+}
 
 ### Exemple Syntaxe !muf4 pour Steel (steelconf)
 
